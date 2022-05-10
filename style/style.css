@@ -1,85 +1,88 @@
 body {
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-.table-menu {
-    background-color: gray;
-}
-.start, .table-menu, .information {
-    margin: 0 auto;
+/* MainPage */
+/* Header start */
+header {
     width: 1200px;
+    background-color: #666;
+    display: flex;
 }
-.start {
-    background: url("../img/banner.png");
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
-.table-menu td, .start td, a {
-    text-align: center;
+nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    list-style: none;
+}
+.nav-wrap {
+    width: 85%;
+}
+nav ul a {
     color: white;
-}
-a {
     text-decoration: none;
 }
-td.logo {
-    text-align: left;
+/* header end */
+
+/* Baner start */
+.banner {
+    background: url(../img/banner.png);
+    width: 1200px;
 }
-/* Контакты, О нас, Волонтеры */
-.h150 {
-    height: 150px;
-}
-.contact_inform {
-    margin: 0 auto;
-    width: 900px;
+.banner-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-}
-.contact_inform h3 {
-    color: #6DC72A;
-}
-.contact_inform td {
-    width: 33.33%;
-}
-.contact_inform p {
-    font-size: 14px;
-    color: #999;
-    margin-top: 0;
-}
-.google_maps {
-    width: 900px;
-    margin: 0 auto;
-}
-/* Форма */
-.form {
-    margin: 0 auto;
-    text-align: center;
-}
-.form input, .form select {
-    margin: 10px 20px;
-    border: 1px solid #999;
-    width: 150px;
-    height: 20px;
-}
-select {
-    height: 24px !important;
-}
-input[type="submit"] {
-    background: white;
-    border-radius: 20px;
-    height: 30px;
-    width: 100px;
-}
-input[type="submit"]:hover {
-    background: #999;
     color: white;
+    padding: 10px 0;
 }
+/* Banner end */
 
-
-body {
+/* News start */
+section.news {
+    width: 1200px;
+}
+.news-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+.news {
+    text-align: center;
+}
+.news h3, .news h5 {
+    color: #6DC72A;
+}
+.news h5 {
+    margin: 0;
+}
+.date, .news p, .news-text h3 {
+    color: #999;
+}
+.news-block-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.news-text {
+    width: 50%;
+    text-align: left;
+}
+/* News end */
 
-
-/* Content */
+/*  */
 .content-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -106,15 +109,19 @@ footer {
     background-color: #666;
     display: flex;
     align-items: center;
-    justify-content: center;
     width: 1200px;
     padding: 20px 0;
+    font-size: 14px;
+    justify-content: space-around;
 }
 .social-links {
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
+}
+.social-links a {
+    color: white;
 }
 .social-links p, .copyright p {
     text-align: center;
@@ -134,4 +141,29 @@ footer {
         width: 100%;
         padding: 0 20px;
     }
+}
+
+/* Форма */
+.form {
+    margin: 0 auto;
+    text-align: center;
+}
+.form input, .form select {
+    margin: 10px 20px;
+    border: 1px solid #999;
+    width: 150px;
+    height: 20px;
+}
+select {
+    height: 24px !important;
+}
+input[type="submit"] {
+    background: white;
+    border-radius: 20px;
+    height: 30px;
+    width: 100px;
+}
+input[type="submit"]:hover {
+    background: #999;
+    color: white;
 }
