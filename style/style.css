@@ -39,6 +39,14 @@ nav ul a {
     background: url(../img/banner.png);
     width: 1200px;
 }
+.banner-other-pages {
+    background: url(../img/banner.png);
+    width: 1200px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .banner-wrap {
     display: flex;
     flex-direction: column;
@@ -87,6 +95,7 @@ section.news {
     display: flex;
     flex-wrap: wrap;
     width: 1200px;
+    padding: 60px 0;
 }
 .content-wrapper h3 {
     color: #6DC72A;
@@ -145,7 +154,7 @@ footer {
 
 /* Форма */
 .form {
-    margin: 0 auto;
+    margin: 20px auto;
     text-align: center;
 }
 .form input, .form select {
@@ -167,3 +176,77 @@ input[type="submit"]:hover {
     background: #999;
     color: white;
 }
+/* contacts start */
+.contact-inform-wrapper, .about-volounteer-text {
+    width: 1200px;
+    padding: 60px 0;
+}
+.contact-inform {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.contact-inform-name {
+    display: flex;
+    justify-content: space-around;
+}
+.contact-inform-data {
+    display: flex;
+    justify-content: space-around;
+}
+.contact-inform-name h3, .contact-inform-data p {
+    width: 250px;
+    text-align: center;
+}
+.contact-inform-name h3, .how-to-stay-volounteer h3, .video-text h3, .volounteer-info-person h3 {
+    color: #6DC72A;
+}
+.contact-inform-data p, .how-to-stay-volounteer p, .about-volounteer-text p, .video-text p, .volounteer-info-person p {
+    color: #999;
+}
+.how-to-stay-volounteer, .about-volounteer-text {
+    text-align: center;
+}
+/* contacts end */
+/* about start */
+.about-volounteer-text p {
+    padding: 0 50px;
+}
+.video-wrapper {
+    width: 1200px;
+    padding: 60px 0;
+    padding-top: 0px;
+}
+.video {
+    display: flex;
+    padding: 0 50px;
+    justify-content: space-between;
+}
+.video-iframe, .video-text {
+    width: 45%;
+}
+.video-text span {
+    color: red;
+}
+/* about end */
+/* volounteers start */
+.volounteer-info-wrapper {
+    width: 1000px;
+}
+.volunteer-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+.volounteer-info-person {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.volounteer-info-person img {
+    width: 300px;
+}
+.volounteer-info-person a {
+
+}
+/* volounteers end */
